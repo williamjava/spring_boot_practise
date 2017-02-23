@@ -111,6 +111,18 @@
 				<artifactId>spring-web</artifactId>
 				<version>4.2.4.RELEASE</version>
 			</dependency>
+
+			<!-- 整个Swagger UI -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.2.2</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>2.2.2</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
