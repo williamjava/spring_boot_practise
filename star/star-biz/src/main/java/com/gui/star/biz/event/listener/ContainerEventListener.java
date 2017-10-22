@@ -7,8 +7,6 @@ import org.springframework.stereotype.Component;
 
 import com.gui.star.biz.event.events.TestEvent;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * spring事件监听器
  * 
