@@ -10,6 +10,9 @@
         <dependent-module archiveName="star-dal-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/star-dal/star-dal">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="star-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/star-common/star-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="star-web"/>
         <property name="java-output-path" value="/star-web/target/classes"/>
     </wb-module>
