@@ -3,6 +3,7 @@ package com.gui.star.biz.service;
 import java.util.List;
 
 import com.gui.star.biz.vo.UserVo;
+import com.gui.star.common.form.UserForm;
 
 public interface UserService {
 	/**
@@ -10,5 +11,7 @@ public interface UserService {
 	 * 
 	 * @return 返回用户列表
 	 */
-	List<UserVo> queryAllUsers();
+	List<UserVo> queryList();
+	
+	void save(UserForm form);
 }
