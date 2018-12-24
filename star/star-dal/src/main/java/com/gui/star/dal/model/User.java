@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 public class User {
+	/**
+	 * 标识主键
+	 * 定义ID的生成规则，每次保存后返回ID
+	 */
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
