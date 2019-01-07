@@ -80,7 +80,7 @@
 
 			<dependency>
 				<groupId>com.alibaba</groupId>
-				<artifactId>druid</artifactId>
+				<artifactId>druid-spring-boot-starter</artifactId>
 				<version>1.1.10</version>
 			</dependency>
 
@@ -143,6 +143,29 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>3.0</version>
+			</dependency>
+			
+			<!-- mybatis-plus begin -->
+			<dependency>
+			    <groupId>com.baomidou</groupId>
+			    <artifactId>mybatisplus-spring-boot-starter</artifactId>
+			    <version>1.0.5</version>
+			</dependency>
+			<dependency>
+			    <groupId>com.baomidou</groupId>
+			    <artifactId>mybatis-plus</artifactId>
+			    <version>2.1.8</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-starter-jdbc</artifactId>
+			</dependency>
+			<!-- mybatis-plus end -->
+			
+			<dependency>
+			    <groupId>org.apache.velocity</groupId>
+			    <artifactId>velocity-engine-core</artifactId>
+			    <version>2.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
