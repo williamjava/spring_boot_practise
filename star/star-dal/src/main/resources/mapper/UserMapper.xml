@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.gui.star.dal.mapper.UserMapper" >
-  
+  <resultMap id="userMap" type="com.gui.star.dal.model.User">
+      <result property="id" column="id"/>
+      <result property="loginname" column="loginname"/>
+      <result property="password" column="password"/>
+      <result property="email" column="email"/>
+      <result property="phone" column="phone"/>
+      <result property="createdAt" column="created_at"/>
+      <result property="updatedAt" column="updated_at"/>
+      <result property="deleted" column="deleted"/>
+  </resultMap>
 </mapper>
