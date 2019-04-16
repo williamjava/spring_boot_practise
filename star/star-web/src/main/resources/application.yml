@@ -9,10 +9,12 @@ spring:
         minIdle: 2
         maxActive: 10
         
-mybatis: 
-  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
-  type-aliases-package: com.gui.star.dal.model  # 注意：对应实体类的路径
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+#  type-aliases-package: com.gui.star.dal.model  # 注意：对应实体类的路径
   
 mybatis-plus: 
   mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
-  typeAliasesPackage: com.gui.star.dal.model  # 注意：对应实体类的路径
+  type-aliases-package: com.gui.star.dal.model
+  configuration:
+    map-underscore-to-camel-case: true

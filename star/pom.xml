@@ -148,17 +148,8 @@
 			<!-- mybatis-plus begin -->
 			<dependency>
 			    <groupId>com.baomidou</groupId>
-			    <artifactId>mybatisplus-spring-boot-starter</artifactId>
-			    <version>1.0.5</version>
-			</dependency>
-			<dependency>
-			    <groupId>com.baomidou</groupId>
-			    <artifactId>mybatis-plus</artifactId>
-			    <version>2.1.8</version>
-			</dependency>
-			<dependency>
-			    <groupId>org.springframework.boot</groupId>
-			    <artifactId>spring-boot-starter-jdbc</artifactId>
+			    <artifactId>mybatis-plus-boot-starter</artifactId>
+			    <version>2.2.0</version>
 			</dependency>
 			<!-- mybatis-plus end -->
 			

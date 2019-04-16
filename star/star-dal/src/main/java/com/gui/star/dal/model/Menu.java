@@ -1,7 +1,10 @@
 package com.gui.star.dal.model;
 
+import com.baomidou.mybatisplus.annotations.TableName;
+
 import java.util.Date;
 
+@TableName()
 public class Menu {
     private Long id;
 

@@ -37,7 +37,7 @@ public class ContainerEventListener {
 	 * 3.容器启动完成和我们定义的Application启动类极其包含的main方法完全是两个概念。前者的时间发生在前面，Application.main()的作用在于启动容器里面的应用程序（比如我们的saturn）
 	 * 
 	 * 
-	 * @param ContextRefreshedEvent
+	 * @param event
 	 */
 	@Async
 	@EventListener
