@@ -38,12 +38,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 	 * 保存用户信息
 	 */
 	@Override
-	public void save(UserForm form) {
+	public Long save(UserForm form) {
 		User user = ObjectUtil.source2Target(form, User.class);
 		DomainUtil.setCommonValueForCreate(user);
 		this.insert(user);
 		
-		log.info("用户ID为：{}", user.getId());
+		return user.getId();
 	}
 
 }

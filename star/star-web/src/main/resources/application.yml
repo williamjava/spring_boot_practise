@@ -18,3 +18,5 @@ mybatis-plus:
   type-aliases-package: com.gui.star.dal.model
   configuration:
     map-underscore-to-camel-case: true
+    # 配置slq打印日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

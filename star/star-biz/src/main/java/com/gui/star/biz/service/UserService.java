@@ -13,5 +13,5 @@ public interface UserService {
 	 */
 	List<UserVo> queryList();
 	
-	void save(UserForm form);
+	Long save(UserForm form);
 }

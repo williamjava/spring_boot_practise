@@ -1,11 +1,10 @@
 package com.gui.star.common.util;
 
-import java.io.Serializable;
-
 import com.gui.star.common.enums.CodeEnum;
-
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+
+import java.io.Serializable;
 
 /**
  * 
@@ -17,7 +16,6 @@ import lombok.extern.slf4j.Slf4j;
  *            数据 以json格式返回客户端请求的数据
  */
 @Data
-@SuppressWarnings("serial")
 @Slf4j
 public class Result<T> implements Serializable {
 	private T data;
