@@ -1,11 +1,11 @@
 package com.gui.star.biz.event.listener;
 
+import com.gui.star.biz.event.events.TestEvent;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-
-import com.gui.star.biz.event.events.TestEvent;
 
 /**
  * spring事件监听器
@@ -23,6 +23,7 @@ import com.gui.star.biz.event.events.TestEvent;
  *
  */
 @Component
+@Slf4j
 public class ContainerEventListener {
 	/**
 	 * 监听容器启动事件
@@ -34,7 +35,7 @@ public class ContainerEventListener {
 	 * 
 	 * 2.容器的启动完成了表明所有的bean都已经完成了注册，而且bean之间的相互依赖也完成了
 	 * 
-	 * 3.容器启动完成和我们定义的Application启动类极其包含的main方法完全是两个概念。前者的时间发生在前面，Application.main()的作用在于启动容器里面的应用程序（比如我们的saturn）
+	 * 3.容器启动完成和我们定义的Application启动类极其包含的main方法完全是两个概念。前者的时间发生在前面，Application.main()的作用在于启动容器里面的应用程序
 	 * 
 	 * 
 	 * @param event
@@ -50,13 +51,13 @@ public class ContainerEventListener {
 
 	/**
 	 * 监听所有的TestEvent类型事件
-	 * 
+	 *
+	 * @Async标识方法异步执行
 	 */
 	@Async
 	@EventListener
 	public void handleTestEvent(TestEvent event) {
+		log.info("我的测试事件开始执行了，测试内容：" , event.getEventContent());
 		// 可以调用本地业务处理逻辑，也可以调用远程的发送短信、邮件等服务。
-
-		System.out.println("我的测试事件开始执行了，测试内容：" + event.getEventContent());
 	}
 }
