@@ -57,7 +57,7 @@ public class ContainerEventListener {
 	@Async
 	@EventListener
 	public void handleTestEvent(TestEvent event) {
-		log.info("我的测试事件开始执行了，测试内容：" , event.getEventContent());
+		log.info("我的测试事件开始执行了，测试内容：{}" , event.getEventContent());
 		// 可以调用本地业务处理逻辑，也可以调用远程的发送短信、邮件等服务。
 	}
 }
